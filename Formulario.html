@@ -5,31 +5,60 @@
     <title>INGRESO DE DATOS</title>
 </head>
 <body style="background-color:powderblue;">
-    <h1 style="font-family:times new roman;border: 3px solid blue;padding: 1px;background-color:magenta;font-size:200%"> <strong style=color:blue;>Complete el Siguiente Formulario :) </strong> </h1>
+    <h1 style="font-family:times new roman;border: 3px solid blue;padding: 1px;background-color:powderblue;font-size:200%"> <strong style=color:blue;>Complete el Siguiente Formulario &#128516 </strong> </h1>
     <form action="/action_page.php" id="form1" method="post">
         <div>
             <fieldset>
-            <legend> <h3>Datos Personales: </h3> </legend>
+            <legend> <h2 style="color:purple;">Datos Personales: &#128513 </h2> </legend>
             <label for="nombre">Nombres:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombre" name="nombre" required><br>
             <label for="apellido">Apellidos:</label>
             <input type="text" id="apellido" name="apellido" required><br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required><br>
             <label for="email"> Correo Electronico:</label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email"><br>
+            <input type="reset">
             </fieldset>
         </div>
         <br>
-        ______________________________________
-        <br>
         <div>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">HTML</label><br>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label><br>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label><br>
-            <input type="radio" id="Phyton" name="fav_language" value="Phyton">
-            <label for="Phyton">Phyton</label>
+            <fieldset>
+            <legend> <h2 style="color:red;">Deportes: &#128526 </h2> </legend>
+            <legend> <h4>Deporte que le gustaría practicar:</h4> </legend>
+            <input type="radio" id="futbol" name="fav_deporte" value="futbol">
+            <label for="futbol">Fútbol</label><br>
+            <input type="radio" id="baloncesto" name="fav_deporte" value="baloncesto">
+            <label for="baloncesto">Baloncesto</label><br>
+            <input type="radio" id="natacion" name="fav_deporte" value="natacion">
+            <label for="natacion">Natación</label><br>
+            <input type="radio" id="volley" name="fav_deporte" value="volley">
+            <label for="volley">Volley</label>
+            <br>
+            <br>
+            <strong style="font-size:100%;">Tiene los implementos necesarios para su deporte:</strong>
+            <label for="cars"> </label>
+            <select id="sino" name="sino">
+            <option value="si">Si</option>
+            <option value="no">No</option>
+            </select>
+            <br>
+            <br>
+            <label for="satis"> <strong style="font-size:100%;"> Experiencia actual en el deporte elejido: </strong> </label>
+            Bajo
+            <input type="range"  id="exp" name="a" value="50">
+            Alto
+            <br>
+            <legend> <h4>A quién recomendaría ese deporte:</h4> </legend>
+            <input type="checkbox" id="fam" name="fam" value="fam">
+            <label for="fam"> Familia</label><br>
+            <input type="checkbox" id="amg" name="amg" value="amg">
+            <label for="amg"> Amigos</label><br>
+            <input type="checkbox" id="vec" name="vec" value="vec">
+            <label for="vec"> Vecinos</label><br>
+            <input type="checkbox" id="doc" name="doc" value="doc">
+            <label for="doc"> Docentes</label>
+            </fieldset>
         </div>
         <br>
         <br>
