@@ -5,26 +5,57 @@
     <title>INGRESO DE DATOS</title>
 </head>
 <body style="background-color:powderblue;">
-    <h1 style="font-family:times new roman;border: 3px solid blue;padding: 1px;background-color:powderblue;font-size:200%"> <strong style=color:blue;>Complete el Siguiente Formulario &#128516 </strong> </h1>
+    <h1 style="font-family:times new roman;border: 3px solid blue;padding: 1px;background-color:powderblue;font-size:200%"> <strong style=color:blue;> <var> Complete el Siguiente Formulario </var> &#128516 </strong> </h1>
     <form action="/action_page.php" id="form1" method="post">
         <div>
             <fieldset>
-            <legend> <h2 style="color:purple;">Datos Personales: &#128513 </h2> </legend>
+            <legend> <h2 style="color:purple;"> <u> Datos Personales: &#128513 </u> </h2> </legend>
             <label for="nombre">Nombres:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
+            <input type="text" id="nombre" name="nombre" size="35" required><br>
             <label for="apellido">Apellidos:</label>
-            <input type="text" id="apellido" name="apellido" required><br>
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" required><br>
+            <input type="text" id="apellido" name="apellido" size="35" required><br>
             <label for="email"> Correo Electronico:</label>
-            <input type="text" id="email" name="email"><br>
+            <input type="text" id="email" name="email" size="29" required><br>
+            <label for="birthday">Fecha de Nacimiento:</label>
+            <input type="date" id="birthday" name="birthday" required><br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" maxlength="6" size="12" placeholder="Solo 6 caracteres" required><br>
+            <input type="submit" value="Submit">
             <input type="reset">
             </fieldset>
         </div>
         <br>
         <div>
             <fieldset>
-            <legend> <h2 style="color:red;">Deportes: &#128526 </h2> </legend>
+            <legend> <h2 style="color:red;"> <u> Deportes: &#128526 </u> </h2> </legend>
+            <h4>Cuadro de ofertas: </h4>
+            <style>
+            table, th, td {
+              border: 1px solid red;
+            }
+            </style>
+            <table>
+              <tr>
+                <th>Deportes</th>
+                <th>Mensualidad</th>
+              </tr>
+              <tr>
+                <td>Futbol</td>
+                <td>$80</td>
+              </tr>
+              <tr>
+                <td>Baloncesto</td>
+                <td>$75</td>
+              </tr>
+              <tr>
+                <td>Natación</td>
+                <td>$70</td>
+              </tr>
+              <tr>
+                <td>Volley</td>
+                <td>$65</td>
+              </tr>
+            </table>
             <legend> <h4>Deporte que le gustaría practicar:</h4> </legend>
             <input type="radio" id="futbol" name="fav_deporte" value="futbol">
             <label for="futbol">Fútbol</label><br>
@@ -37,14 +68,14 @@
             <br>
             <br>
             <strong style="font-size:100%;">Tiene los implementos necesarios para su deporte:</strong>
-            <label for="cars"> </label>
+            <label for="sino"> </label>
             <select id="sino" name="sino">
             <option value="si">Si</option>
             <option value="no">No</option>
             </select>
             <br>
             <br>
-            <label for="satis"> <strong style="font-size:100%;"> Experiencia actual en el deporte elejido: </strong> </label>
+            <label for="exp"> <strong style="font-size:100%;"> Experiencia actual en el deporte elejido: </strong> </label>
             Bajo
             <input type="range"  id="exp" name="a" value="50">
             Alto
@@ -58,11 +89,25 @@
             <label for="vec"> Vecinos</label><br>
             <input type="checkbox" id="doc" name="doc" value="doc">
             <label for="doc"> Docentes</label>
+            <br>
+            <h4> Le brindaremos los siguientes beneficios</h4>
+            <ul>
+              <li>Duchas</li>
+              <li>Vestidores</li>
+              <li>Desayuno/Almuerzo/Cena</li>
+              <li>Bebidas hidratantes</li>
+              <li>Transporte</li>
+            </ul>
             </fieldset>
+        <h2> <i> Muchas Gracias!! </i> </h2>
         </div>
-        <br>
-        <br>
-        <div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
+        <!--<div>
             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             <label for="vehicle1"> I have a bike</label><br>
             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -95,4 +140,4 @@
         <input type="submit" value="Enviar">
     </form>
 </body>
-</html>
+</html>-->
